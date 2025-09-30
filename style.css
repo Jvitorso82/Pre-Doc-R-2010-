@@ -10,11 +10,11 @@
 }
 
 body {
-    height: 70vh;
+    height: 80vh;
     margin: 5% 15%;
     padding: 1% 1%;
     border: 1px solid #d0d7de;
-    max-width: 800px;
+    width: 800px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             
 }
@@ -183,4 +183,5 @@ p {
 input {
     max-width: 75%;
 }
+
 
