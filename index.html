@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pré-Doc R-2010</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">DARF R-2010</h1>
+    </header>
+
+    <main class="container">
+        <section>
+            <div class="container__cabecalho">
+                <div class="container__cabecalho__1">
+                    <p>Dedução<br><span class="texto">DDFXXX</p>
+                    <P>Data de Vencimento:<br><span class="texto">2025</P>
+                    <P>Data de Pagamento:<br><span class="texto">2025</P>
+                    <P>Valor:<br><span class="texto">10,00</P>
+                    <P>Valor Compensado:<br><span class="texto">0,00</P>
+                </div> 
+                <div class="container__cabecalho__2">
+                    <P>Tipo de DARF<br><span class="texto">Integração</P> 
+                </div>   
+            </div>
+            <h2 class="container__subtitulo">DARF</h2>
+            <div class="container__darf">
+                <p>Receita:<br><span class="texto">2025</p>
+                <p>Período de Apuração <br><input type="date"></p>   
+                <p>Recurso<br><input list="tipo-recurso"></p>
+                <datalist id="tipo-recurso">
+                    <option value="0   Limite de Saque sem Controle de Empenho">
+                    <option value="1   Com Cota do Orçamento do Exercício">
+                    <option value="2   Com Limite de Restos a Pagar">
+                    <option value="3   Com Vinculação de Pagamento">
+                    <option value="8   Limite de Pagamento com Títulos Públicos">
+                </datalist>            
+            </datalist> 
+                <p>Processo:<br><input type="text"></p>     
+            </div>
+            <h2 class="container__subtitulo">Informações da Nota Fiscal</h2>
+            <div class="container__informacoes-NF">
+                <p>Número da NF/Fatura:<br><input type="text"></p>
+                <p>Nº Série:<br><input type="text"></p>  
+                <p>Data de Emissão da NF:<br><input type="date"></p>  
+                <p>Valor da NF:<br><input type="text"></p>
+            </div>
+            <h2 class="container__subtitulo">Informações de Retenção</h2>
+            <div class="container__informacoes-retencao">
+                <p>Tipo:<br><input list="Tipo-retencao"></p>
+                    <datalist id="Tipo-retencao">
+                        <option value="PRINCIPAL">
+                        <option value="ADICIONAL">
+                    </datalist>    
+                <p>CPRB<br><input list="tipo-cprb"></p> 
+                    <datalist id="tipo-cprb">
+                        <option value="SIM">
+                        <option value="NÃO">
+                    </datalist>   
+                <p>Valor Retenção (+):<br><input type="text"></p>  
+                <p>Valor Ret. Serv. Subcontratados(-):<br><input type="text"></p>
+                <p>Valor Não Retido Principal (-):<br><input type="text"></p> 
+            </div>
+            <div class="lista-recolhedor">
+                <table>
+                    <tr>
+                        <th>Seq</th>
+                        <th>Recolhedor</th>
+                        <th>Base de Cálculo</th>
+                        <th>Valor da Receita</th>
+                        <th>Multa</th>
+                        <th>Juros</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>02.601.745/0001-31</td>
+                        <td>100,00</td>
+                        <td>10,00</td>
+                        <td>0,00</td>
+                        <td>0,00</td>
+                    </tr>
+                </table>
+                <p class="Total-lista-recolhedor">Total Pré-Doc:<span class="texto">10,00</span></p>
+            </div>
+           
+            <h3 class="container__observacao__titulo">*Observação</h3>
+            <div class="container__observacao">
+                <textarea class="meu-textarea"></textarea>
+            </div>
+            <div class="container__botoes">
+                <button class="container__botoes__botao" onclick="confirmar()">Confirmar</button>
+                <button class="container__botoes__botao" onclick="retornar()">Retornar</button>
+            </div>
+        </section>
+    </main>      
+<script src="app.js"></script>    
+</body>
+
+</html>
